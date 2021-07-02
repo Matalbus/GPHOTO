@@ -1,0 +1,139 @@
+* { /*algumas configurações iniciais*/
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body { /*estilizando o body*/
+    width: 100%;
+    min-height: 100vh;
+    background-color: #d9d9d9; /* cor do fundo */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* body justificado */
+}
+
+.gphoto-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start; /* dividiu */
+    width: 60%;
+    height: 100vh;
+}
+
+.decoracao-gphoto {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+    position: relative;
+    right: 50px;
+}
+
+.gphoto-continue {
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+    position: relative;
+    left: 100px;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    background-color: #ffffff;
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 2px solid rgb(116, 114, 114);
+}
+
+
+
+.entrar-gphoto {
+    background-color: #c6d637;
+    color: #030303;
+    padding: 8px;
+    border-radius: 4px;
+    margin: 10px;
+}
+
+
+.cadastro-gphoto {
+    background-color: #c6d637;
+    color: #030303;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+    background-color: #ffffff;
+    border: 2px solid rgb(116, 114, 114);
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url(apple-button.png)
+}
+
+.app-download:nth-child(2) {
+    background-image: url(googleplay-button.png);
+}
+
+/* media queries */
+
+
+@media (max-width: 1024px) {
+    .instagram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .instagram-wrapper {
+        width: 90%;
+    }
+
+    .decoracao-gphoto {
+        display: none;
+    }
+
+    .gphoto-continue {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+}
